@@ -1,10 +1,51 @@
 body {
   background-color: #f1f1f1;
+  margin: 0 auto;
 }
 
 .landscape-frame {
+  position: relative;
+  overflow: hidden;
   width: 300px;
-  height: 200px;
-  background-color: pink;
-  
+  height: 300px;
+  border-radius: 100%;
+  border: 2px dashed pink;
+  background: url('../../dist/images/loa.jpg') no-repeat top center;
+  transition: background 1s ease-out;
+  &:hover {
+    background: url('../../dist/images/loa.jpg') no-repeat center center;
+    .landscape-1 {
+      margin-left: 300px;
+      animation: slideAndScale 1s;
+    }
+    .landscape-2 {
+      transform: rotate(190deg);
+      margin-left: 250px;
+      margin-top: -200px;
+    }
+  }
 }
+.landscape-1 {
+  position: absolute;
+  margin-left: -250px;
+  width: 100%;
+  height: 100%;
+  background: url('../../dist/images/fly.svg') no-repeat bottom left;
+  transition: 1s ease-out;
+}
+
+.landscape-2 {
+  position: absolute;
+  margin-left: -200px;
+  margin-top: -100px;
+  width: 100%;
+  height: 100%;
+  background: url('../../dist/images/rotate.svg') no-repeat bottom left;
+  transition: 1s .5s ease-out;
+}
+
+// @keyframes slideAndScale {
+//   0% { transform: scale(1); margin-left: -250px;}
+//   50% { transform: scale(1.2);}
+//   100% { transform: scale(1); margin-left: 300px;}
+// }
