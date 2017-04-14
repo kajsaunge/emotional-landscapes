@@ -1,0 +1,9 @@
+npm-debug*
+node_modules/
+public/
+.env
+.editorconfig
+.DS_Store
+.tmp*
+*.orig
+browserify-cache.json
