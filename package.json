@@ -1,0 +1,23 @@
+{
+  "name": "emotional-landscapes",
+  "version": "1.0.0",
+  "description": "### WHAT ### * Björk inspired landscapes-ish animations",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajsaunge/emotional-landscapes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajsaunge/emotional-landscapes/issues"
+  },
+  "homepage": "https://github.com/kajsaunge/emotional-landscapes#readme"
+}
