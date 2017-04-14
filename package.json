@@ -6,15 +6,19 @@
   "dependencies": {
     "normalize.css": "^6.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "watch-css": "nodemon -e scss -x \"npm run scss\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kajsaunge/emotional-landscapes.git"
   },
-  "author": "",
+  "author": "Kajsa Unge",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kajsaunge/emotional-landscapes/issues"
