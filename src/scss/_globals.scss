@@ -4,13 +4,14 @@ body {
   position: relative;
 }
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
   background-color: white;
+  width: 100%;
   min-height: 60px;
   // overflow: hidden;
   z-index: 100;
@@ -31,9 +32,7 @@ a {
   text-decoration: none;
   font-size: 20px;
 }
-a[ id= "about" ]:target ~ #frame section.module {
-    transform: translateY( 0px );
-}
+
 h2 {
   background-color: tomato;
   display: inline-block;
@@ -47,13 +46,41 @@ h2 {
   position: fixed;
   bottom: 50px;
   left: 50%;
-  margin-left: -25px;
-  width: 50px;
-  height: 50px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   background-color: cyan;
   border: none;
   outline: none;
+  span:after {
+    content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: -1;
+  	width: 60px;
+  	height: 60px;
+  	box-shadow: 0 0 0 0 rgba(255,255,255,.2);
+  	border-radius: 100%;
+  	opacity: 0;
+    animation: pulsate 3s 3;
+  }
+}
+@keyframes pulsate {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	60% {
+		box-shadow: 0 0 0 60px rgba(255,255,255,.2);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 .clickOne {
   .fly {
@@ -85,8 +112,6 @@ h2 {
   100% { transform: scale(1); margin-left: 300px;}
 }
 
-
-
 /* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
@@ -94,57 +119,52 @@ h2 {
   max-width: 960px;
   margin: 0 auto;
 }
-
+// .module {
+//   transform: translateZ( 0 );
+//   transition: transform 0.6s ease-in-out;
+//   backface-visibility: hidden;
+// }
 /* ============================================================
   SECTIONS
 ============================================================ */
-section.module:last-child {
+.module:last-child {
   margin-bottom: 0;
 }
-section.module h2 {
+.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
-section.module p {
+.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
 }
-section.module p:last-child {
+.module p:last-child {
   margin-bottom: 0;
 }
-section.module.content {
-  padding: 40px 0;
+.module.content {
   position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
+  padding: 15vh 10%;
+  min-height: 110vh;
   width: 100vw;
   &:not(.straight):before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    transform: rotate(4deg) scale(2);
-    background-color: #f1f1f1;
-  }
-  &:not(.straight):after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    transform: rotate(-4deg) scale(2);
-    background-color: #f1f1f1;
-  }
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      transform: rotate(4deg) scale(2);
+      background-color: #f1f1f1;
+    }
 }
-section.module.parallax {
-  padding: 240px 0;
+.module.parallax {
+  min-height: 120vh;
+  padding: 40% 0;
   background-position: 0 0;
+  background-size: cover;
 }
-section.module.parallax h1 {
+.module.parallax h1 {
   color: white;
   font-size: 48px;
   line-height: 1;
@@ -152,42 +172,194 @@ section.module.parallax h1 {
   text-align: center;
   text-transform: uppercase;
 }
-section.module.parallax-1 {
+.module.parallax-1 {
   background-image: url("../../dist/images/bg1.jpg");
-  background-size: 100%;
 }
-section.module.parallax-2 {
+.module.parallax-2 {
   background-image: url("../../dist/images/bg2.jpg");
-  background-size: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    transform: rotate(-4deg) scale(2);
+    background-color: #f1f1f1;
+    }
 }
-section.module.parallax-3 {
+.module.parallax-3 {
   background-image: url("../../dist/images/bg3.jpg");
-  background-size: 100%;
 }
 
 @media all and (min-width: 600px) {
-  section.module h2 {
+  .module h2 {
     font-size: 42px;
   }
-  section.module p {
+  .module p {
     font-size: 20px;
   }
-  section.module.parallax {
+  .module.parallax {
     padding: 300px 0;
   }
-  section.module.parallax h1 {
+  .module.parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
+  .module.parallax h1 {
     font-size: 160px;
   }
 }
-.module {
-  transform: translateZ( 0 );
-  transition: transform 0.6s ease-in-out;
-  backface-visibility: hidden;
-  margin-top: -60px;
-  
+
+@media only screen and (min-width: 700px) {
+  .module.parallax-2:before {
+    height: 60px;
+  }
 }
+
+@media only screen and (min-width: 900px) {
+  .module.content:not(.straight):before {
+    top: -20px;
+  }
+  .module.parallax-2:before {
+    top: -10px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .module.content:not(.straight):before {
+    top: -40px;
+    height: 80px;
+  }
+  .module.parallax-2:before {
+    top: -40px;
+    height: 80px;
+  }
+}
+
+
+//
+// /* ============================================================
+//   PRIMARY STRUCTURE
+// ============================================================ */
+// .container {
+//   max-width: 960px;
+//   margin: 0 auto;
+// }
+//
+// /* ============================================================
+//   SECTIONS
+// ============================================================ */
+// .module:last-child {
+//   margin-bottom: 0;
+// }
+// .module h2 {
+//   margin-bottom: 40px;
+//   font-size: 30px;
+// }
+// .module p {
+//   margin-bottom: 40px;
+//   font-size: 16px;
+//   font-weight: 300;
+// }
+// .module p:last-child {
+//   margin-bottom: 0;
+// }
+// .module.content {
+//   padding: 40px 0;
+//   position: relative;
+//   padding: 25vh 10%;
+//   min-height: 100vh;
+//   width: 100vw;
+//   &:not(.straight):before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 60px;
+//     transform: rotate(4deg) scale(2);
+//     background-color: #f1f1f1;
+//   }
+// }
+// .module.parallax {
+//   padding: 240px 0;
+//   background-position: 0 0;
+//   // height: 100vh;
+// }
+// .module.parallax h1 {
+//   color: white;
+//   font-size: 48px;
+//   line-height: 1;
+//   font-weight: 700;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
+// .module.parallax-1 {
+//   background-image: url("../../dist/images/bg1.jpg");
+//   background-size: 150vh;
+//   // background-size: 150vw;
+// }
+// .module.parallax-2 {
+//   background-image: url("../../dist/images/bg2.jpg");
+//   background-size: 150vh;
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: -70px;
+//     left: 0;
+//     width: 100%;
+//     height: 60px;
+//     transform: rotate(-4deg) scale(2);
+//     background-color: #f1f1f1;
+//   }
+// }
+// .module.parallax-3 {
+//   background-image: url("../../dist/images/bg3.jpg");
+//   // background-repeat: no-repeat;
+//   background-size: 150vh;
+// }
+//
+// @media all and (min-width: 600px) {
+//   .module h2 {
+//     font-size: 42px;
+//   }
+//   .module p {
+//     font-size: 20px;
+//   }
+//   .module.parallax {
+//     padding: 300px 0;
+//   }
+//   .module.parallax h1 {
+//     font-size: 96px;
+//   }
+// }
+// @media all and (min-width: 960px) {
+//   .module.parallax h1 {
+//     font-size: 160px;
+//   }
+// }
+// .module {
+//   transform: translateZ( 0 );
+//   transition: transform 0.6s ease-in-out;
+//   backface-visibility: hidden;
+// }
+//
+// @media only screen and (min-width: 500px) {
+//   .module.parallax-1 {
+//     background-size: 150vw;
+//     background-color: red;
+//   }
+//   .module.content {
+//     &:not(.straight):before {
+//       top: -60px;
+//     }
+//   }
+// // .module.content:not(.straight):before {
+// //   top: 0;
+// // }
+// //   .module.parallax {
+// //     background-size: 100vh;
+// //   }
+// }
