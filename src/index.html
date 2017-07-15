@@ -10,17 +10,33 @@
 </head>
 <body>
   <div id="frame">
+    <button id="trigger" type="button" name="button"><span></span>V</button>
+
     <header>
-      <a href="#">Design &amp; </br>Code Hybrid</a>
+      <!-- <a href="#">Design &amp; </br>Code Hybrid</a> -->
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a class="js-scroll-to-about" href="#about">About</a></li>
         <li><a href="#stuff">Stuff</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
-    <button id="trigger" type="button" name="button"><span></span>V</button>
 
+    <div class="shapes">
+      <div>
+        <img class="shape card" src="../dist/images/icons/card.svg" alt="">
+        <img class="shape stats" src="../dist/images/icons/stats.svg" alt="">
+        <img class="shape search" src="../dist/images/icons/search.svg" alt="">
+      </div>
+      <div class="shapes-two">
+        <img class="shape close" src="../dist/images/icons/close.svg" alt="">
+        <img class="shape mail" src="../dist/images/icons/mail.svg" alt="">
+        <img class="shape receipt" src="../dist/images/icons/receipt.svg" alt="">
+      </div>
+    </div>
     <section class="module parallax parallax-1">
+      <object class="bird-container">
+          <embed src="../dist/images/bird.svg" width="40%" height="30%">
+      </object>
       <div class="container">
         <h1>Design &amp; Code Hybrid</h1>
         <img class="fly" src="../dist/images/fly.svg" alt="">
@@ -28,12 +44,13 @@
       </div>
     </section>
 
-    <section id="about" class="module content">
+    <section class="module content">
+
       <div class="container">
-        <h2>About</h2>
+        <h2 id="about" >About</h2>
         <p>Who and who..Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
         <p>projects grid. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      </div>
+    </div>
     </section>
 
     <section id="stuff" class="module parallax parallax-2">
@@ -46,14 +63,14 @@
       <div class="container">
         <h2>CSS loaders</h2>
         <p>Explanation of the loaders. When to use what and where Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-        <div class="parent">
-          <div class="child">
+        <div class="flex-col">
+          <div class="flex-col__item">
             <div class="spinner-loader">Loading...</div>
           </div>
-          <div class="child">
+          <div class="flex-col__item">
             <div class="bar-loader">Loading...</div>
           </div>
-          <div class="child">
+          <div class="flex-col__item">
             <div class="circular-loader">Loading...</div>
           </div>
         </div>
@@ -74,6 +91,11 @@
     </section>
   </div>
 
+  <footer>
+    <img class="js-scroll-to-top" src="../dist/images/icons/mail.svg" alt="">
+  </footer>
+
   <script src="scripts/main.js" type="text/javascript"></script>
+  <script type="text/javascript" src="scripts/smoothscroll.js"></script>
 </body>
 </html>

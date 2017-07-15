@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>nfc-icon/black/card</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nfc-icon/black/card">
+            <g>
+                <g id="Group" transform="translate(0.960000, 3.840000)" stroke="#000000">
+                    <path d="M12.918144,12 L18.729408,12" id="Shape"></path>
+                    <path d="M22.593024,14.546208 C22.593024,15.246336 22.025856,15.813504 21.325824,15.813504 L1.68576,15.813504 C0.985824,15.813504 0.418656,15.246336 0.418656,14.546208 L0.418656,1.748736 C0.418656,1.048896 0.985824,0.48144 1.68576,0.48144 L21.32592,0.48144 C22.025856,0.48144 22.59312,1.048992 22.59312,1.748736 L22.59312,14.546208 L22.593024,14.546208 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="0.41856" y="3.380544" width="22.174464" height="3.804192"></rect>
+                </g>
+                <rect id="Rectangle-path" x="0.946944" y="0.002976" width="23.04" height="23.04"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

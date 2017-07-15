@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>nfc-icon/black/search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nfc-icon/black/search">
+            <g>
+                <g id="Group" stroke="#000000">
+                    <path d="M16.4914,14.7401 L22.9077,21.1564 C23.3744,21.6231 23.3744,22.3797 22.9077,22.8464 L22.9077,22.8464 C22.441,23.3131 21.6844,23.3131 21.2177,22.8464 L14.8015,16.4302" id="Shape"></path>
+                    <circle id="Oval" cx="9.5347" cy="9.4734" r="8.7254"></circle>
+                    <path d="M10.1027,3.468 C8.4211,3.4128 6.7219,4.0204 5.4383,5.3039 C4.1547,6.5874 3.5471,8.2867 3.6023,9.9683" id="Shape"></path>
+                </g>
+                <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

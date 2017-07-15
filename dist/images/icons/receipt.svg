@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>nfc-icon/black/receipt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nfc-icon/black/receipt">
+            <g>
+                <g id="Group" transform="translate(3.000000, 0.000000)" stroke="#000000">
+                    <polyline id="Shape" points="13.5287 0.5097 13.5287 5.3097 17.5287 5.3097"></polyline>
+                    <path d="M14.0657,17 L4.024,17" id="Shape"></path>
+                    <path d="M14.0657,14 L4.024,14" id="Shape"></path>
+                    <path d="M14.0657,11 L4.024,11" id="Shape"></path>
+                    <path d="M9.6027,8 L4.024,8" id="Shape"></path>
+                    <path d="M17.5287,21.0309 L15.191,23.4842 L12.1043,20.1868 L9.0179,23.4842 L5.9312,20.1868 L2.9367,23.3863 L0.5405,20.8263 L0.5288,20.8263 L0.5288,1.3153 C0.5288,0.8789 0.8794,0.5097 1.316,0.5097 L13.5287,0.5097 C13.7363,0.5097 13.8328,0.5991 13.9804,0.7446 L17.2928,4.0133 C17.4431,4.1616 17.5287,4.2983 17.5287,4.5097 L17.5287,21.0309 L17.5287,21.0309 Z" id="Shape"></path>
+                </g>
+                <rect id="Rectangle-path" x="0" y="0.0001" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

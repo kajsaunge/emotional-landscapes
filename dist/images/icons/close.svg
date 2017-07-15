@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>nfc-icon/black/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nfc-icon/black/close">
+            <g>
+                <g id="Group" stroke="#000000">
+                    <path d="M16.6292,7.3818 L7.3878,16.6232" id="Shape"></path>
+                    <path d="M7.3878,7.3818 L16.6292,16.6232" id="Shape"></path>
+                    <circle id="Oval" cx="12.0067" cy="12.0025" r="11.3822"></circle>
+                </g>
+                <rect id="Rectangle-path" x="0" y="-2.58379177e-15" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
